@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emnebeskrivelse – Programvaretesting</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="kurs-tittel">
+        Bachelor i Anvendt informasjonsteknologi · 2. år, høst · 7,5 studiepoeng
+      </div>
+      <h1>Programvaretesting</h1>
+      <div class="meta">Emnebeskrivelse</div>
+    </header>
+
+    <nav class="breadcrumb">
+      <a href="../../index.html">Hjem</a>
+      <span>›</span>
+      <a href="emnebeskrivelse.html">Programvaretesting</a>
+      <span>›</span>
+      Emnebeskrivelse
+    </nav>
+
+    <main>
+      <h2>Faglig innhold i emnet</h2>
+      <div class="card card-primary">
+        <p>
+          Emnet <strong>Programvaretesting</strong> gir studentene praktiske
+          ferdigheter med moderne verktøy og metoder som er etterspurt i
+          IT-bransjen.
+        </p>
+        <p>
+          Emnet dekker testnivåer – fra isolerte enhetstester til
+          integrasjonstester og ende-til-ende-tester – for applikasjoner bygget
+          med JavaScript og TypeScript i miljøer som Node.js og React. Det
+          legges vekt på at testingen er en integrert del av utviklingsprosessen,
+          ikke noe som gjøres i ettertid.
+        </p>
+        <p>
+          Emnet bygger på kunnskaper fra tidligere emner i programmering,
+          databaser, web-utvikling og systemutvikling. Undervisningen kombinerer
+          teori, praktiske øvinger og et gruppebasert prosjektarbeid.
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Emnenavn</td>
+            <td>Programvaretesting</td>
+          </tr>
+          <tr>
+            <td>Studiepoeng</td>
+            <td>7,5 stp</td>
+          </tr>
+          <tr>
+            <td>Studienivå</td>
+            <td>Bachelor, 2. år</td>
+          </tr>
+          <tr>
+            <td>Undervisningsform</td>
+            <td>Forelesninger og øvingstimer</td>
+          </tr>
+          <tr>
+            <td>Omfang</td>
+            <td>12 leksjoner, ca. 36 undervisningstimer</td>
+          </tr>
+          <tr>
+            <td>Vurdering</td>
+            <td>
+              Skriftlig eksamen 4 timer (100 %) + prosjektoppgave (arbeidskrav)
+            </td>
+          </tr>
+          <tr>
+            <td>Hjelpemidler til eksamen</td>
+            <td>Ingen</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ============ LÆRINGSMÅL – KUNNSKAP ============ -->
+      <h2>Læringsutbytte</h2>
+      <h3>Kunnskap</h3>
+      <p>Etter fullført emne skal studenten ha kunnskap om:</p>
+
+      <div class="card card-accent">
+        <ul>
+          <li>
+            Grunnleggende begreper innen programvaretesting: testtilfelle,
+            testsuitt, testprosess, feil, defekt og testdekning
+          </li>
+          <li>
+            Testpyramiden og de ulike testnivåene: enhets-, integrasjons- og
+            ende-til-ende-testing
+          </li>
+          <li>
+            Ulike testmetoder: black-box-testing, white-box-testing og
+            grå-boks-testing
+          </li>
+          <li>
+            Mocking, stubbing og spies som teknikker for å isolere enheter under
+            test
+          </li>
+          <li>
+            Asynkron testing og utfordringer knyttet til timing og sideeffekter
+          </li>
+          <li>
+            Hva integrasjonstesting er og hvordan REST API-er testes systematisk
+          </li>
+          <li>
+            Grunnleggende prinsipper for testing av brukergrensesnitt og
+            React-komponenter
+          </li>
+          <li>
+            Ende-til-ende-testing av web-applikasjoner og hva som skiller det
+            fra lavere testnivåer
+          </li>
+          <li>
+            Testdekning (code coverage) som kvalitetsmål og dens begrensninger
+          </li>
+          <li>
+            Vanlige sikkerhetssårbarheter i web-applikasjoner (OWASP Top 10) og
+            grunnleggende sikkerhetstesting
+          </li>
+          <li>
+            Ytelsestesting og de vanligste metodene for å avdekke flaskehalser
+          </li>
+          <li>
+            Kontinuerlig integrasjon (CI) og automatisering av testprosessen i
+            en CI/CD-pipeline
+          </li>
+          <li>
+            Teststrategier, teststyring og rollen testing spiller i ulike
+            utviklingsmetodikker (Scrum, Kanban)
+          </li>
+        </ul>
+      </div>
+
+      <!-- ============ LÆRINGSMÅL – FERDIGHETER ============ -->
+      <h3>Ferdigheter</h3>
+      <p>Etter fullført emne skal studenten kunne:</p>
+
+      <div class="card card-accent">
+        <ul>
+          <li>
+            Sette opp et testmiljø med Jest eller Vitest i et
+            JavaScript/TypeScript-prosjekt
+          </li>
+          <li>
+            Skrive strukturerte enhetstester med <code>describe</code>,
+            <code>it</code>/<code>test</code> og relevante
+            <code>expect</code>-matchers
+          </li>
+          <li>
+            Anvende TDD-syklusen (Red–Green–Refactor) i praktisk
+            programvareutvikling
+          </li>
+          <li>
+            Bruke <code>jest.mock()</code>, <code>jest.fn()</code> og
+            <code>jest.spyOn()</code> for å mocke moduler og avhengigheter
+          </li>
+          <li>
+            Skrive tester for asynkrone funksjoner med <code>async/await</code>,
+            Promises og fake timers
+          </li>
+          <li>
+            Sette opp og bruke Supertest for å teste Node.js/Express REST API-er
+          </li>
+          <li>Teste CRUD-operasjoner og feilhåndtering i et REST API</li>
+          <li>
+            Bruke React Testing Library til å teste React-komponenter på et
+            semantisk og brukersentrert nivå
+          </li>
+          <li>
+            Skrive ende-til-ende-tester med Playwright for å validere komplette
+            brukerreiser
+          </li>
+          <li>
+            Generere og tolke testdekningsrapporter med Jest
+            <code>--coverage</code>
+          </li>
+          <li>
+            Identifisere og teste for vanlige sikkerhetsproblemer som manglende
+            inputvalidering og SQL-injeksjon
+          </li>
+          <li>
+            Planlegge og gjennomføre enkle ytelsestester og tolke resultatene
+          </li>
+          <li>Sette opp automatiserte testpipelines med GitHub Actions</li>
+          <li>
+            Begrunne og velge hensiktsmessig teststrategi for et gitt
+            programvareprosjekt
+          </li>
+          <li>
+            Presentere og forsvare testarbeid muntlig i en prosjektsammenheng
+          </li>
+        </ul>
+      </div>
+      <h3>Generell kompetanse</h3>
+      <p>Etter fullført emne skal studenten:</p>
+      <div class="card card-accent">
+        <ul>
+          <li>
+            Kunne reflektere over kvalitet, risiko og ansvar i utvikling og
+            testing av programvare
+          </li>
+          <li>
+            Kunne kommunisere testfaglige vurderinger til utviklere,
+            prosjektledere og andre interessenter
+          </li>
+          <li>
+            Forstå hvordan systematisk testing bidrar til robuste, sikre og
+            brukervennlige løsninger
+          </li>
+          <li>
+            Kunne arbeide strukturert og etterprøvbart med kvalitetssikring i
+            team
+          </li>
+        </ul>
+      </div>
+      <!-- ============ INNHOLD ============ -->
+      <h2>Emnets innhold</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Tema</th>
+            <th>Nøkkelverktøy / -metoder</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Introduksjon til programvaretesting</td>
+            <td>Testpyramiden, testtyper</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Enhetstesting med Jest/Vitest</td>
+            <td>Jest, Vitest, matchers</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Test-Driven Development (TDD)</td>
+            <td>Red–Green–Refactor</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mocking, stubs og spies</td>
+            <td>jest.mock, jest.fn, jest.spyOn</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Asynkron testing</td>
+            <td>async/await, fake timers</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Integrasjonstesting og REST API-er</td>
+            <td>Supertest, Express</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Testing av React-komponenter</td>
+            <td>React Testing Library</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Ende-til-ende-testing</td>
+            <td>Playwright</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Testdekning og kvalitetsmålinger</td>
+            <td>Jest --coverage, lcov</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Sikkerhetstesting</td>
+            <td>OWASP Top 10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Ytelsestesting</td>
+            <td>k6, Node.js perf_hooks</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>CI/CD og testautomatisering</td>
+            <td>GitHub Actions</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ============ FORKUNNSKAPER ============ -->
+      <h2>Forkunnskapskrav</h2>
+      <div class="card">
+        <p>Studenten forventes å ha grunnleggende kunnskap innen:</p>
+        <ul>
+          <li>Programmering i JavaScript og/eller TypeScript</li>
+          <li>
+            Web-utvikling med HTML, CSS og React (eller tilsvarende rammeverk)
+          </li>
+          <li>Serverside-utvikling med Node.js og Express</li>
+          <li>REST API-er og HTTP-protokollen</li>
+          <li>Versjonskontroll med Git og GitHub</li>
+          <li>Grunnleggende systemutvikling og smidige metoder</li>
+        </ul>
+      </div>
+
+      <!-- ============ VURDERING ============ -->
+      <h2>Læringsaktiviteter</h2>
+      <div class="card">
+        <p>
+          Emnet gjennomføres gjennom forelesninger, praktiske øvinger,
+          demonstrasjoner av testverktøy og gruppebasert prosjektarbeid.
+          Studentene arbeider både med korte testoppgaver underveis og med en
+          større testsuite som knytter teori til realistiske
+          utviklingsscenarier.
+        </p>
+      </div>
+      <h2>Vurdering</h2>
+
+      <h3>Arbeidskrav – Prosjektoppgave</h3>
+      <div class="card card-primary">
+        <p>
+          Emnet <strong>Programvaretesting</strong> gir studentene praktiske
+          ferdigheter med moderne verktøy og metoder som er etterspurt i
+          IT-bransjen.
+        </p>
+        <p>
+          Emnet dekker testnivåer – fra isolerte enhetstester til
+          integrasjonstester og ende-til-ende-tester – for applikasjoner bygget
+          med JavaScript og TypeScript i miljøer som Node.js og React. Det
+          legges vekt på at testingen er en integrert del av utviklingsprosessen,
+          ikke noe som gjøres i ettertid.
+        </p>
+        <p>
+          Emnet bygger på kunnskaper fra tidligere emner i programmering,
+          databaser, web-utvikling og systemutvikling. Undervisningen kombinerer
+          teori, praktiske øvinger og et gruppebasert prosjektarbeid.
+        </p>
+      </div>
+
+      <h3>Skriftlig eksamen</h3>
+      <div class="card card-warn">
+        <p>
+          Individuell skriftlig eksamen på 4 timer. Ingen hjelpemidler er
+          tillatt. Eksamen teller 100 % av endelig karakter (A–F). Eksamen
+          inneholder flervalgsoppgaver, kortsvarsoppgaver og praktisk
+          kodeoppgave.
+        </p>
+      </div>
+
+      <h2>Obligatoriske aktiviteter</h2>
+      <div class="card">
+        <p>
+          Prosjektoppgaven er obligatorisk og må være bestått for at studenten
+          skal kunne fremstille seg til skriftlig eksamen.
+        </p>
+      </div>
+
+      <h2>Eksamensformer</h2>
+      <div class="card">
+        <p>
+          Emnet vurderes med en kombinasjon av obligatorisk prosjektoppgave og
+          individuell skriftlig eksamen. Vurderingsformen er valgt for å
+          kombinere praktiske testferdigheter med individuell faglig forståelse.
+        </p>
+      </div>
+
+      <h2>Hjelpemidler til eksamen</h2>
+      <div class="card">
+        <p>
+          Ingen hjelpemidler er tillatt til skriftlig eksamen. Dette fremgår
+          også av emneinformasjonen øverst på siden.
+        </p>
+      </div>
+
+      <h2>Annet</h2>
+      <div class="card">
+        <p>
+          Emnet oppdateres fortløpende i takt med utviklingen i testverktøy,
+          rammeverk og praksis i bransjen. Bruk av KI-verktøy skal skje i
+          samsvar med emnets læringsmål og universitetets regler for akademisk
+          redelighet.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      Programvaretesting · Bachelor i Anvendt informasjonsteknologi · 7,5
+      studiepoeng
+    </footer>
+  </body>
+</html>

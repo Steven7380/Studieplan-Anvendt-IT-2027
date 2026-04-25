@@ -1,0 +1,63 @@
+Emneplan for Informasjonssystemer
+Emnekode:
+INF1000
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart høst 2026
+Undervisningsspråk:
+Engelsk og norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Forkunnskapskrav
+3.	Læringsutbytte
+4.	Læringsaktiviteter
+5.	Obligatoriske aktiviteter
+6.	Eksamensformer
+7.	Hjelpemidler til eksamen
+8.	Annet
+9.	Litteratur
+10.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Emnet gir en innføring i fagfeltet informasjonssystemer og gir kunnskap om forskning innen fagfeltet. Studentene skal få innføring i forretningsforståelse og hvordan informasjonssystemer brukes i organisasjoner. Studentene skal lære om sammenhengen mellom mennesker, organisasjon og teknologi. I tillegg skal dette emnet gi en faglig plattform for videre studier innen IT og informasjonssystemer.
+Forkunnskapskrav
+Ingen
+Læringsutbytte
+Etter fullført emne skal studenten:
+Kunnskap 
+•	ha kunnskap om hva informasjonssystemer er
+•	ha kunnskap om muligheter og utfordringer ved innføring av informasjonssystemer i organisasjoner
+•	ha kunnskap om anvendelse av informasjonssystemer i arbeidslivet og i samfunnet som helhet
+•	ha kunnskap om sikkerhet og risiko
+•	ha kjennskap om teknologiske trender
+•	ha kjennskap til etiske problemstillinger ved anvendelse av informasjonssystemer
+•	ha kunnskap om sentrale lover og regler på fagområdet
+Ferdigheter 
+•	kunne diskutere og reflektere over etiske problemstillinger i forbindelse med anvendelse av informasjonssystemer
+•	kunne forklare hvordan informasjonssystemer inngår i en virksomhet og i samfunnet
+•	kunne utarbeide et skriftlig arbeid som reflekterer over ovennevnte kunnskapsområder
+Generell kompetanse 
+•	kunne reflektere over egen faglig utøvelse og justere denne under veiledning
+•	kunne reflektere over etiske, kvalitetsmessige og sikkerhetsmessige problemstillinger og ha kjennskap til sentrale lover og regler på fagområdet
+•	kunne analysere relevante IT-faglige problemstillinger.
+•	kunne formidle fremgangsmåter og resultater i forbindelse med IT-faglige prosjekter og arbeidsoppgaver, samt beherske IT-faglige uttrykksformer både i relasjon til kommunikasjon med IT-spesialister og allmennheten.
+•	kunne tilegne seg oppdatert kunnskap innenfor ovennevnte kunnskaps- og ferdighetsområder
+Læringsaktiviteter
+Forelesninger: Introduksjon til og gjennomgang av de ulike tema som tas opp i emnet.
+Øvinger: Ulike former for studentaktivitet, som for eksempel casebaserte diskusjonsoppgaver som presenteres i plenum. Klassen og emneansvarlig gir tilbakemeldinger på presentasjoner.
+Selvstendig arbeid: Lesing av pensum, obligatoriske oppgaver.
+Veiledning: Emneansvarlig og evt hjelpelærer er tilgjengelig for veiledning etter behov.
+Obligatoriske aktiviteter
+2 obligatoriske arbeidskrav i grupper må være godkjent før det gis anledning til å fremstille seg til eksamen. Tilbakemelding på arbeidskravet gis individuelt, i gruppe og/eller i plenum. 
+Godkjent arbeidskrav gjelder kun for inneværende semesters eksamen og påfølgende kontinuasjonseksamen.
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Individuell skriftlig eksamen med tilsyn, varighet 3 timer
+Hjelpemidler til eksamen
+Alle trykte og skrevne hjelpemidler er tillatt
+Annet
+Emnet kan undervises på engelsk.

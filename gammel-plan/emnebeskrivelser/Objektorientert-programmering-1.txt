@@ -1,0 +1,69 @@
+Emneplan for Objektorientert programmering 1
+Emnekode:
+OBJ2000
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart høst 2026
+Undervisningsspråk:
+Norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Forkunnskapskrav
+3.	Læringsutbytte
+4.	Læringsaktiviteter
+5.	Obligatoriske aktiviteter
+6.	Eksamensformer
+7.	Hjelpemidler til eksamen
+8.	Annet
+9.	Litteratur
+10.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Studentene skal få en innføring i objektorientert programmering. Studentene får samtidig en innføring i programmering av grafiske brukergrensesnitt med et objektorientert språk. Emnet bygger faglig på PRG1000 Grunnleggende programmering I og PRG1100 Grunnleggende programmering 2.
+Forkunnskapskrav
+Ingen
+Læringsutbytte
+Kunnskap 
+Etter fullført emne skal studenten ha kunnskap om
+•	klasser og objekter
+•	rammeverk, pakker og navnerom
+•	innkapsling i objektorientering
+•	aggregering og komposisjon
+•	arv og spesialisering
+•	oppramstyper, adapterklasser og datastrukturer
+•	tilrettelegging og bruk av kodebiblioteker
+•	statiske og instansielle klassemedlemmer
+•	oppbygging av grafisk brukergrensesnitt
+Ferdigheter 
+Etter fullført emne skal studenten kunne 
+•	forstå klassediagrammer
+•	bruke aggregering og komposisjon
+•	instansiere klasser og bruke objekter
+•	gjennomføre innkapsling av klassemedlemmer
+•	gjøre valg mellom spesialisering og aggregering
+•	anvende lineære datastrukturer: pekerkjede- og tabellbaserte
+•	anvende iteratorer og enkel sortering
+•	samle egen kode i eget bibliotek
+•	utvikle applikasjoner med enkle grafiske brukergrensesnitt
+ Generell kompetanse
+Etter fullført emne skal studenten 
+•	ha innsikt i begrepet objektorientert programmering
+•	kunne bygge enkle objektorienterte brukerprogrammer
+•	forstå diagram over enkle klassestrukturer
+•	kunne reflektere over egen faglig utøvelse og justere denne under veiledning
+Læringsaktiviteter
+Forelesninger, oppgaveløsning og obligatoriske arbeidskrav.
+Obligatoriske aktiviteter
+Emnet har ett individuelt besvart arbeidskrav som må være godkjent før man får adgang til eksamen. Tilbakemelding på arbeidskravet gis individuelt, i gruppe og/eller i plenum.
+Godkjent arbeidskrav gjelder kun for inneværende semesters eksamen og påfølgende kontinuasjonseksamen.
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Skriftlig eksamen med tilsyn, 3 timer, individuell.
+ 
+Gradert karakterskala A - F, der A er beste karakter og F er ikke bestått.
+Hjelpemidler til eksamen
+Alt trykt og skriftlig materiale.

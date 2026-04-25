@@ -1,0 +1,60 @@
+Emneplan for Applikasjonsutvikling for web
+Emnekode:
+APP2000
+Studiepoeng:
+15
+Antall semester:
+2 semestre
+Planen gjelder for:
+Undervisningsstart høst 2026
+Undervisningsspråk:
+Engelsk og norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Læringsutbytte
+3.	Læringsaktiviteter
+4.	Obligatoriske aktiviteter
+5.	Eksamensformer
+6.	Hjelpemidler til eksamen
+7.	Litteratur
+8.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Emnet gir erfaring med utvikling av webapplikasjoner, det vil si et program der brukergrensesnittet kjører i nettleseren. Emnet tar for seg utvikling av alle deler av en webapplikasjon, både på tjenersiden og klientsiden. Studenten bør ha kompetanse om web, programmering og databaser tilsvarende Web og HCI, Grunnleggende programmering 1 og Database 1.
+Læringsutbytte
+Kunnskap
+Etter fullført emne skal studenten ha kunnskap om:
+•	språk og verktøy for utvikling av webapplikasjoner
+•	dokumentobjektmodellen for nettsider (DOM)
+•	utvikling og bruk av web-API’er, inkludert REST API’er
+•	problemstillinger knyttet til sikkerhet og personvern i webapplikasjoner
+•	relevante webstandarder, inkludert HTML, CSS, WCAG og HTTP/HTTPS
+•	programvarearkitektur for webapplikasjoner
+•	DevOps-praksis, med bruk av skytjenester, kontainerteknologi, mikrotjenester og automatisert distribuering av applikasjoner (CI/CD)
+Ferdigheter
+Etter fullført emne skal studenten kunne:
+•	delta i alle deler av applikasjonsutvikling for å løse praktiske problemer
+•	analysere og beskrive krav til webapplikasjoner
+•	utvikle og teste webapplikasjoner med programmering både på klientsiden og tjenersiden
+•	bruke relevante utviklingsverktøy, rammeverk og bibliotek
+•	bruke kunstig intelligens i programutvikling
+•	bruke verktøy som Git og GitHub for versjonskontroll og deling av kode
+Generell kompetanse
+Etter fullført emne skal studenten kunne:
+•	planlegge og gjennomføre prosjekter i grupper
+•	jobbe med oppdragsgivere i utviklingsprosjekter på en hensiktsmessig måte
+•	anvende smidige metoder i programvareutvikling
+•	dokumentere og presentere resultater for oppdragsgivere
+•	reflektere over samfunnsmessige konsekvenser av digitaliseringen
+Læringsaktiviteter
+Den organiserte undervisningen består av forelesninger, oppgaveløsning og veiledning.
+Obligatoriske aktiviteter
+Tre arbeidskrav gjennom studieåret. Alle arbeidskravene må være godkjent for å kunne gå opp til eksamen. Gjennomføringen av arbeidskravene blir publisert i starten av semesteret. 
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Hjemmeeksamen og muntlig eksamen
+I løpet av undervisningsåret skal studentene delta i et gruppearbeid som går ut på å lage en webapplikasjon. Webapplikasjonen (inkludert programkoden) og den skriftlige rapporten (med individuelle bidrag fra hvert gruppemedlem) danner vurderingsgrunnlaget for hjemmeeksamen. Hjemmeeksamen teller 40% av endelig karakter. Muntlig gruppeeksamen, der studentene gir en presentasjon med demonstrasjon av kjørbar applikasjon etterfulgt av utspørring, teller 60% av endelig karakter.
+Gradert karakterskala A - F, der A er beste karakter og F er ikke bestått.
+Hjelpemidler til eksamen
+Alle.

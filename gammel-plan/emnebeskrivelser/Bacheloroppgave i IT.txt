@@ -1,0 +1,63 @@
+Emneplan for Bacheloroppgave i IT og Informasjonssystemer
+Emnekode:
+BOP3000
+Studiepoeng:
+15
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart vår 2026
+Undervisningsspråk:
+Engelsk og norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Forkunnskapskrav
+3.	Læringsutbytte
+4.	Læringsaktiviteter
+5.	Obligatoriske aktiviteter
+6.	Eksamensformer
+7.	Hjelpemidler til eksamen
+8.	Litteratur
+9.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Emnet gir kunnskaper om og praktisk erfaring med prosjekt som arbeidsform, ved at det gjennomføres et IT/IS relatert prosjektarbeid. Studenten skal anvende sine fagkunnskaper som er tilegnet gjennom bachelorstudiet, samt utvikle dypere kunnskap og ferdigheter om aktuelle tema i det konkrete prosjektarbeidet. Arbeidet skal utføres i en prosjektgruppe, og helst for en ekstern oppdragsgiver. Studentene er solidarisk ansvarlig for oppgaven. Prosjektarbeidet beskrives og dokumenteres i en skriftlig rapport/bacheloroppgave som leveres inn.
+Forkunnskapskrav
+Kandidaten må ha bestått minimum 120 stp av bachelorstudiet for å kunne begynne på bacheloroppgave.
+Læringsutbytte
+Kunnskaper
+Etter fullført emne skal studenten ha kunnskap om
+•	prosjektplanlegging
+•	prosjektstyring og gjennomføring
+•	prosjektavslutning
+•	dokumentasjon av prosess og resultat
+•	verktøy og metoder for prosjektarbeid
+Ferdigheter
+Etter fullført emne skal studenten kunne
+•	planlegge et prosjekt innen fagområdet
+•	følge opp og gjennomføre et prosjekt
+•	samarbeide med andre om og administrere et prosjekt
+•	rapportere prosjektets fremdrift
+•	velge og anvende passende verktøy og metoder for et gitt prosjekt
+•	dokumentere prosjektgjennomføring og faglig arbeidet i en prosjektrapport
+Generell kompetanse
+Etter fullført emne skal studenten kunne
+•	planlegge, styre og gjennomføre et prosjekt sammen med andre
+•	identifisere kunnskapsbehov og fremskaffe informasjon for et prosjekt
+•	utvikle egne kunnskaper, ferdigheter og reflektere over eget arbeid
+•	reflektere over etiske og sikkerhetsmessige problemstillinger
+•	ha kjennskap til sentrale lover og regler på fagområdet
+Læringsaktiviteter
+Studentene skal jobbe i prosjektgrupper med bacheloroppgave gjennom hele semesteret. Det gis tilbud om gruppeveiledning, og presentasjon av gruppens prosjektarbeid for andre studenter og/eller eksterne aktører kan påregnes.
+Obligatoriske aktiviteter
+Bokmål
+I starten av semesteret skal det leveres en prosjektskisse, en prosjektplan og kopi av inngått kontrakt med oppdragsgiver. Dette skal godkjennes av fagansvarlig.
+
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+I vurderingen av emnet inngår vurdering av innlevert bacheloroppgave samt vurdering av en muntlig gruppevis presentasjon og demonstrasjon av arbeid og resultat.
+Innlevert bacheloroppgave skal inneholde dokumentasjon av prosjektgjennomføring og det faglige arbeidet i prosjektet. I den muntlige presentasjonen beskrives og demonstreres prosess og produkt. Individuell karakter basert på innlevert bacheloroppgave, og hvor den muntlige presentasjonen kan justere endelig karakter.
+Gradert karakterskala A -F, der A er beste karakter og F er ikke bestått.
+Hjelpemidler til eksamen
+Alle

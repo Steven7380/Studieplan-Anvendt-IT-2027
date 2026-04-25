@@ -1,0 +1,63 @@
+Emneplan for Objektorientert programmering 2
+Emnekode:
+OBJ2100
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart vår 2026
+Undervisningsspråk:
+Norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Læringsutbytte
+3.	Læringsaktiviteter
+4.	Obligatoriske aktiviteter
+5.	Eksamensformer
+6.	Hjelpemidler til eksamen
+7.	Annet
+8.	Litteratur
+9.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Studentene skal videreutvikle kunnskapene om objektorientert programmering gjennom å lage større applikasjoner. Begrepene strømmer, tråder og asynkron prosessering innføres. Ingen formelle krav til forkunnskaper, men emnet bygger på OBJ2000 Objektorientert programmering 1, eller tilsvarende.
+Læringsutbytte
+Kunnskap
+Etter fullført emne skal studenten ha kunnskap om
+•	enkel programdesign
+•	persistens: lokal fillagring, serialisering og databasetilgang
+•	strømmer, nettverksklasser og I/O
+•	tråder og multitasking
+•	anvendelser av grensesnitt
+•	polymorfi og overlasting
+•	anonyme og indre klasser
+•	ikke-lineære datastrukturer: trestrukturer og hashtabeller
+Ferdigheter
+Etter fullført emne skal studenten kunne 
+•	anvende kunnskap om enkel programdesign i praksis
+•	bruke ulike klasser for persistens
+•	anvende tekstlig og binær serialisering
+•	programmere strømmer lokalt og i nettverk
+•	programmere tråder og gjennomføre multitasking
+•	programmere med ikke-lineære datastrukturer
+Generell kompetanse
+Etter fullført emne skal studenten 
+•	ha god kompetanse i objektorienterte emner
+•	kunne bygge større objektorienterte brukerprogrammer
+•	forstå diagram over større strukturer og programdesign
+•	kunne reflektere over egen faglig utøvelse og justere denne under veiledning
+Læringsaktiviteter
+Forelesninger, oppgaveløsning og obligatoriske arbeidskrav.
+Obligatoriske aktiviteter
+Emnet har ett individuelt arbeidskrav som må være godkjent før man får adgang til eksamen. Tilbakemelding på arbeidskravet gis individuelt, i gruppe og/eller i plenum.
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Hjemmeeksamen og Muntlig gruppeeksamen
+Hjemmeeksamen (72 timer, gruppe): Utvikling av programvare med tilhørende skriftlig rapport.Teller 60 % av endelig karakter.
+Muntlig gruppeeksamen: Presentasjon med demonstrasjon av kjørbar applikasjon, etterfulgt av utspørring. Teller 40 % av endelig karakter
+Gradert karakterskala A - F, der A er beste karakter og F er ikke bestått.
+Hjelpemidler til eksamen
+Alle hjelpemidler.
+

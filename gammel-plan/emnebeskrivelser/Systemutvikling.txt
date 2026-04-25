@@ -1,0 +1,64 @@
+Emneplan for Systemutvikling
+Emnekode:
+SYS1000
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart vår 2026
+Undervisningsspråk:
+Norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Forkunnskapskrav
+3.	Læringsutbytte
+4.	Læringsaktiviteter
+5.	Obligatoriske aktiviteter
+6.	Eksamensformer
+7.	Hjelpemidler til eksamen
+8.	Annet
+9.	Litteratur
+10.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Systemutvikling handler om utvikling, innføring, vedlikehold og utskifting av IT-systemer. Emnet skal gi studentene en innføring i systemutviklingsteorier, modeller og verktøy, samt kunnskaper om hvordan IT prosjekter gjennomføres.
+Forkunnskapskrav
+Ingen.
+Læringsutbytte
+Kunnskap
+Etter fullført emne skal studenten ha kunnskap om:
+•	visjon, målformulering, problemdefinisjon og kravspesifikasjon
+•	roller, eierskap, kunder og forretningsforståelse
+•	ulike systemutviklingsmetoder
+•	planlegging, gjennomføring og ledelse av systemutviklingsprosjekter
+•	prosjektorganisering og styringsverktøy
+•	risikostyring og kvalitetssikring
+•	teamorganisering
+•	evaluering og metrikk
+•	innførings-, utskiftings- og avviklingsstrategier
+Ferdigheter
+Etter fullført emne skal studenten kunne: 
+•	lage brukerhistorier og brukstilfeller
+•	utforme kravspesifikasjon
+•	velge egnet systemutviklingsmetod for et prosjekt
+•	utforme system-, prosess- og brukerdokumentasjon
+Generell kompetanse
+Etter fullført emne skal studenten kunne:
+•	planlegge og gjennomføre prosjekter sammen med andre
+•	reflektere over egen faglig utøvelse og justere denne under veiledning
+•	analysere relevante IT-faglige problemstillinger.
+•	formidle fremgangsmåter og resultater i forbindelse med IT-faglige prosjekter og arbeidsoppgaver
+•	samt beherske IT-faglige uttrykksformer både i relasjon til kommunikasjon med IT-spesialister og allmennheten.
+Læringsaktiviteter
+Den organiserte undervisningen består av forelesninger, gruppe og individuelt veiledning og oppgaveløsning.
+Obligatoriske aktiviteter
+Ingen.
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Skriftlig gruppeeksamen uten tilsyn, varighet hele semesteret.
+Gradert karakterskala A - F, der A er beste karakter og F er ikke bestått.
+Kontinuasjonseksamen gjennomføres neste gang emnet går ordinært etter studieplanen.
+Hjelpemidler til eksamen
+Alle.

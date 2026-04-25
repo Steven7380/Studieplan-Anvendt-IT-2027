@@ -1,0 +1,68 @@
+Øverst i skjemaet
+Nederst i skjemaet
+Emneplan for Database 1
+Emnekode:
+DAT1000
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart høst 2026
+Undervisningsspråk:
+Norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1. Faglig innhold i emnet
+2. Forkunnskapskrav
+3. Læringsutbytte
+4. Læringsaktiviteter
+5. Obligatoriske aktiviteter
+6. Eksamensformer
+7. Hjelpemidler til eksamen
+8. Annet
+9. Litteratur
+10. Emnet inngår i følgende studier
+Faglig innhold i emnet
+Emnet gir en grundig innføring i relasjonsdatabaser, SQL, datamodellering og databaseteori.
+Forkunnskapskrav
+Ingen
+Læringsutbytte
+Kunnskap
+Etter fullført emne skal studenten ha kunnskap om:
+* grunnleggende terminologi innen relasjonsdatabaser
+* oppgavene til et databasehåndteringssystem
+* bruksområder for spørrespråket SQL
+* hensikten med utvikling av datamodeller
+* hensikten med å normalisere datamodeller
+* det teoretiske grunnlaget for relasjonsdatabaser
+Ferdigheter
+Etter fullført emne skal studenten kunne:
+* lage SQL-setninger for datadefinisjon
+* lage SQL-setninger for innsetting, oppdatering og sletting av data
+* lage SQL utvalgsspørringer for uthenting av data
+* lage datamodeller med entiteter, attributter og forhold
+* implementere datamodeller i form av databasetabeller med nøkler
+* normalisere datamodeller og databasetabeller
+* definere og bruke visninger (views) i spørringer
+* lage SQL metadataspørringer mot systemtabeller
+* utføre enkel brukeradministrasjon og tilgangskontroll ved bruk av SQL-setninger
+Generell kompetanse
+Etter fullført emne skal studenten:
+* kunne tilegne seg oppdatert kunnskap innenfor ovennevnte kunnskaps¿ og ferdighetsområder
+* ha god oversikt over databasefaget og forstå sammenhengen mellom databasefaget og andre fagområder
+* ha erfaring med å jobbe i gruppe
+* kunne reflektere over egen faglig utøvelse og justere denne under veiledning
+Læringsaktiviteter
+Den organiserte undervisningen består av forelesninger, veiledede labøvinger og oppgaveløsning. Forelesningene introduserer fagstoffet og gir oversikt. På labøvingene løser studentene oppgaver, ofte på datamaskin, og får veiledning individuelt eller i mindre grupper. Utvalgte oppgaver blir gjennomgått i plenum. Det er i tillegg forventet at studentene arbeider med stoffet på egen hånd.
+Obligatoriske aktiviteter
+2 arbeidskrav i gruppe må være godkjent for å kunne gå opp til eksamen.
+Godkjent arbeidskrav gjelder kun for inneværende semesters eksamen og påfølgende kontinuasjonseksamen.
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Skriftlig, individuell eksamen med tilsyn, 3 timer.
+Gradert karakterskala A-F, der A er beste karakter og F er ikke bestått.
+Hjelpemidler til eksamen
+Alle trykte og skrevne hjelpemidler tillatt.
+

@@ -1,0 +1,63 @@
+Emneplan for Informasjonssikkerhet
+Emnekode:
+SIK2000
+Studiepoeng:
+7.5
+Antall semester:
+1 semester
+Planen gjelder for:
+Undervisningsstart vår 2026
+Undervisningsspråk:
+Norsk
+Ansvarlig:
+USN Handelshøyskolen
+Innholdsfortegnelse
+1.	Faglig innhold i emnet
+2.	Forkunnskapskrav
+3.	Læringsutbytte
+4.	Læringsaktiviteter
+5.	Obligatoriske aktiviteter
+6.	Eksamensformer
+7.	Hjelpemidler til eksamen
+8.	Litteratur
+9.	Emnet inngår i følgende studier
+Faglig innhold i emnet
+Studentene får innføring i relevant lovverk og standarder for informasjonssikkerhet. Studentene skal
+lære om trusler mot informasjonssikkerhet i virksomheter og i samfunnet generelt og tiltak for å sikre
+informasjon. Studentene får også innføring i sikkerhetsledelse herunder kvalitetssystemer og risiko
+og sårbarhetsanalyse.
+Forkunnskapskrav
+Ingen.
+Læringsutbytte
+Etter fullført emne skal studenten ha:
+ 
+Kunnskap
+•	ha kunnskap om ulike sikkerhetsutfordringer i virksomheter og i samfunnet og hvordan disse utfordringene kan håndteres
+•	ha kunnskap om standarder og lovverk som gjelder sikker og forsvarlig forvaltning av elektronisk lagret informasjon
+•	ha kunnskap om ulike teknikker, både teknologiske og ikke-teknologiske som kriminelle benytter
+•	kjenne til metoder for risiko- og sårbarhetsanalyse
+ 
+Ferdigheter
+•	kunne forklare ulike teknikker, både teknologiske og ikke-teknologiske som kriminelle benytter
+•	kunne bidra i planlegging og implementering av systematiske tiltak for informasjonssikkerhet i en bedrift, samt dokumentasjon av disse
+•	kunne analysere og finne sikkerhetstrusler
+•	kunne gjennomføre risikovurdering av informasjonssystem
+ 
+Generell kompetanse
+•	kunne reflektere over hvorfor informasjonssikkerhet er viktig for enkeltindivider, organisasjoner og samfunnet
+•	kunne reflektere over hvordan kriminalitet arter seg og stå rustet til å forstå hvordan det er mulig å sikre seg mot kriminalitet
+•	kunne tilegne seg oppdatert kunnskap innenfor ovennevnte kunnskaps- og ferdighetsområder, både hva gjelder nye teknikker og metoder som benyttes av de kriminelle, og nye teknikker og metoder for sikkerhet
+Læringsaktiviteter
+•	Forelesninger: Introduksjon til og gjennomgang av de ulike tema som tas opp i emnet.
+•	Øvinger: Ulike former for studentaktivitet, som for eksempel casebaserte diskusjonsoppgaver som presenteres i plenum.
+•	Selvstendig arbeid: Lesing av pensum, obligatoriske oppgaver.
+•	Veiledning: Emneansvarlig er tilgjengelig for veiledning etter behov.
+Obligatoriske aktiviteter
+Ett obligatorisk arbeidskrav i grupper må være godkjent før det gis anledning til å fremstille seg til
+eksamen. Tilbakemelding på arbeidskravet gis individuelt, i gruppe og/eller i plenum.
+
+Studenten mister retten til å fremstille seg til eksamen dersom kravet ikke oppfylles, jf. universitets- og høyskoleloven § 11-4 andre ledd og forskrift om studier og eksamen ved USN § 7-1 første ledd.
+Eksamensformer
+Skriftlig, individuell eksamen med tilsyn, varighet 4 timer.
+Hjelpemidler til eksamen
+Alle trykte og skrevne hjelpemidler tillatt.

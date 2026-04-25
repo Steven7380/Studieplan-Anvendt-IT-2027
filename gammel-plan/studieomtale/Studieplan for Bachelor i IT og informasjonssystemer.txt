@@ -1,0 +1,153 @@
+Studieplan for Bachelor i IT og informasjonssystemer
+
+Studieprogramkode:
+ITIS
+Undervisningsspråk:
+Norsk
+Planen gjelder for:
+Kull 2026 HØST
+Heltidsprosent:
+100
+Studienivå:
+Bachelor studium
+Ansvarlig:
+USN Handelshøyskolen
+Studiepoeng:
+180
+Varighet:
+6 semestre
+
+Innholdsfortegnelse
+1. Studieprogrammets innhold
+2. Læringsutbytte
+3. Opptakskrav
+4. Oppbygging og gjennomføring
+5. Læringsaktiviteter
+6. Eksamensformer
+7. Studentutveksling og internasjonalisering
+8. Annet
+9. Studiemodell
+10. Andre gjennomføringer
+
+Studieprogrammets innhold
+
+Studiet i IT og informasjonssystemer er et treårig, fulltids studium som gir 180 studiepoeng og graden Bachelor i IT og informasjonssystemer.
+ 
+Næringslivet og offentlig sektor har stort behov for medarbeidere med kompetanse innenfor program- og systemutvikling, webbaserte løsninger og IT-forvaltning generelt. Studiet i IT og informasjonssystemer imøtekommer denne etterspørselen.
+ 
+Studiet gir et godt fundament innenfor teknologi, med vekt på programmering og systemutvikling. Dette kombineres med kunnskap og praktiske ferdigheter om hvordan teknologien brukes i bedrifter og virksomheter. Denne tilnærmingen gir studenter som er ettertraktet i arbeidsmarkedet og godt rustet for videre studier på masternivå.
+ 
+Studiet er forskningsbasert, og dette innebærer at det legges vekt på å formidle oppdatert kunnskap innenfor et felt som endres kontinuerlig.
+ 
+Bachelor i IT og informasjonssystemer gir et godt teknisk grunnlag og en forståelse av samspillet mellom teknologi og organisasjon, gjennom fokus på bruk av teknologi i næringsliv og offentlig sektor. Studiet gir god kompetanse i utvikling, innføring og anvendelse av IT-systemer i offentlig og privat sektor.
+Læringsutbytte
+En kandidat med fullført bachelorgrad i IT og Informasjonssystemer skal ha følgende totale læringsutbytte:
+ 
+KUNNSKAP
+Kandidaten
+* har kunnskap om informasjonsteknologien i dens fulle bredde og kompleksitet
+* kjenner til virksomheters mest grunnleggende behov for informasjonssystemer
+* har kunnskap om systemutviklingsteorier, modeller og verktøy
+* har kunnskap om organisering av data og databaser
+* har kunnskap om prosjektledelse og prosjekt som arbeidsform
+* har kunnskap om et utvalg av programmeringsspråk og verktøy som anvendes for utvikling av applikasjoner og web-løsninger
+* har generell kunnskap om samfunnsvitenskapelig metode, ledelse og organisasjon som basis for å forstå de kontekstene og sammenhengene hvor informasjonssystemet spiller en kritisk rolle i virksomheter
+ 
+FERDIGHETER
+Kandidaten
+* kan utføre drifts-, utviklings, opplærings- og IT-lederoppgaver i en virksomhet
+* kan lede og delta i ulike roller i utviklingsprosjekter
+* kan programmere applikasjoner og web-løsninger
+* kan anvende informasjonsteknologi og informasjonssystemer som en basis for kontinuerlig utvikling og oppdatering av ervervede kunnskaper og ferdigheter
+* kan rapportere og presentere resultatene av eget og andres arbeid
+ 
+GENERELL KOMPETANSE
+Kandidaten
+* kan planlegge og gjennomføre prosjekter sammen med andre
+* kan reflektere over etiske og sikkerhetsmessige problemstillinger og ha kjennskap til sentrale lover og regler på fagområdet
+* kan analysere relevante IT-faglige problemstillinger
+* kan reflektere over egen faglig utøvelse og justere denne under veiledning
+* kan anvende sine IT-faglige kunnskaper og ferdigheter på nye virksomhetsområder og i forbindelse med utvikling av nye virksomhetsprosesser
+* kan formidle fremgangsmåter og resultater i forbindelse med IT-faglige prosjekter og arbeidsoppgaver, samt beherske IT-faglige uttrykksformer både i relasjon til kommunikasjon med IT-spesialister og allmennheten
+* kan bidra til nytenking og i innovasjonsprosesser i forbindelse med bruk av IT i virksomheter
+
+Opptakskrav
+Generell studiekompetanse
+
+Oppbygging og gjennomføring
+De to første studieårene er felles for alle studentene i USN, mens det tredje studieår tilbys campusspesifikke valgemner.
+ 
+I løpet av de to første studieårene skal studenten tilegne seg kunnskaper, ferdigheter og generell kompetanse innenfor følgende fire fagområder (120 studiepoeng):
+ 
+* Programmering: Kandidatene skal ha kunnskap om et utvalg av programmeringsspråk og verktøy som anvendes for utvikling av applikasjoner og web-løsninger.
+* Database: Kandidatene skal ha kunnskap om opprettelse og anvendelse av databaser og databasestrukturer. Videre skal kandidaten han kunnskap om hvordan databaser brukes opp mot andre systemer.
+* Systemutvikling: Kandidatene skal kunne gjennomføre systemutviklingsprosjekter, både i teori og praksis. Kandidatene skal videre ha kunnskap om de ulike rollene i systemutviklingsprosjekter, samt forstå hvordan lede slike prosesser.
+* Informasjonssystemer: Kandidatene skal ha kunnskap om informasjonssystemer, hvordan disse påvirker samfunnet og organisasjon. Videre skal kandidaten ha god forståelse for etiske, sikkerhetsmessige og juridiske problemstillinger innen fagfeltet.
+ 
+I det tredje studieåret tilbys campusunike valgemner. Studentene har i dette studieåret anledning til å velge emner på tvers av campus og emner fra andre studier som tilbys på fakultetet. Det tas forbehold om endringer i valgemner som blir tilbudt hvert semester. Studentene kan ikke velge emner fra flere campus i samme semester.
+Studentene kan ta emnene Studentbedrift eller Internship i stedet for bacheloroppgaven, dersom dette tilbys i på campus.
+Studentene kan ta Internship i tillegg til bacheloroppgaven, men ikke Studentbedrift i tillegg til bacheloroppgaven.
+Læringsaktiviteter
+Studiets oppbygning og innhold er detaljert beskrevet i studieplan og emneplaner. De viser alle studiets deler og progresjon fra semester til semester. Læringsutbytte for hvert emne framgår av studieplanen. 
+ 
+Sentrale læringsaktiviteter er forelesninger og fagseminarer, skrive- og presentasjonstrening, praktiske øvelser og caseoppgaver, samt bacheloroppgave. Læringsaktivitetene vil vektlegge en prosessuell tilnærming på individ og gruppenivå. Det vil si at studenten må samarbeide med andre studenter og komme fram til et felles resultat for å nå læringsutbyttene. Det forutsettes at studentene arbeider selvstendig og i grupper med forberedelser og etterarbeid knyttet til læringsaktivitetene, samt arbeid med pensumlitteratur. 
+ 
+Undervisning og fagseminar
+Undervisning i pensumlitteraturen og temaene for de enkelte emnene vil skje gjennom forelesninger og fagseminarer. Undervisningen vil være forskningsbasert. Oppfølging og forberedelse til undervisningen understøttes av IKT basert tilrettelegging. Det vil bli benyttet gjesteforelesere fra næringsliv/offentlig forvaltning der det er naturlig. 
+ 
+Argumentasjons- og kommunikasjonstrening
+Studentene skal øve på ulike ferdigheter i muntlig og skriftlig dialog og kommunikasjon. Studentene trenes i å gi og ta imot veiledning i skriveprosesser, og bruke skriving i egen læreprosess. Det gis veiledning på individuelt skrivearbeid og gruppearbeid og det gis kurs i litteratur og informasjonssøk, akademiske stiler og referansehåndtering. 
+ 
+Prosjekt- og øvingsoppgaver
+Studentene arbeider individuelt og i grupper med prosjektoppgaver som beskriver praktiske og teoretiske utfordringer innen IT og Informasjonssystemer. Studentene utfordres til å utlede sammenhenger og konsekvenser, utforske ulike situasjonsoppfatninger og gjøre etiske og normative vurderinger. Prosjektoppgavene gir således øvelse i praktisk planlegging, gjennomføring og evaluering og refleksjon rundt eget arbeid.
+ 
+Veiledet oppgave (bacheloroppgave)
+Bacheloroppgaven er et selvstendig utviklingsarbeid som bygger på og videreutvikler de kunnskaper studentene har ervervet gjennom studiets første del. Bacheloroppgaven tar utgangspunkt i en reell problemstilling fra privat næringsliv/offentlig forvaltning. Studentene gis veiledning av faglærerne og ressurspersoner i virksomhetene. 
+
+Eksamensformer
+Gjennom bachelorstudiet skal studentene møte ulike obligatoriske arbeidskrav og eksamensformer som gir et bredt grunnlag for vurdering av forventet læringsutbytte i emnene. Studenten skal arbeide aktivt med problemstillinger som er relevant for praksisfeltet, og få et eierforhold til egen læreprosess og arbeidsmåter som har overføringsverdi til arbeidslivet.
+ 
+Obligatoriske arbeidskrav i emnene skal sikre at studenten oppnår læringsutbyttet. Arbeidskravene skal bidra til å gi studenten jevn faglig progresjon gjennom semesteret og gi grunnlag for refleksjon, dialog og diskusjon rundt problemstillinger i fagområdet. I arbeidskravene inngår enten skriftlige innleveringer, muntlige presentasjoner, forberedte diskusjoner eller obligatorisk frammøte. Arbeidskravene skal enten gjøres individuelt eller i gruppe. På denne måten bidrar arbeidskravene til å bygge opp under evne til selvstendig arbeid, evne til å samarbeide med andre og trening i muntlig og skriftlig kommunikasjon innenfor alle studiets fagområder.
+ 
+De obligatoriske arbeidskravene blir vurdert til godkjent/ ikke godkjent. Studenten må ha fått godkjent de obligatoriske arbeidskravene i emnet for å kunne fremstille seg til eksamen. Obligatorisk arbeidskrav er gyldig innværende semester og påfølgende kontinuasjonseksamen.
+ 
+Eksamensformene i bachelorstudiet er varierte. Disse tester studentene både individuelt og i gruppe, skriftlig og muntlig, gjennom skoleeksamener og større oppgaver som strekker seg over tid. Eksamensformene er valgt ut i fra emnenes egenart og mål om samlet sett å sikre at overordnet læringsutbytte for studiet blir vurdert.
+Følgende eksamensformer vil benyttes i studiet:
+Skriftlig skoleeksamen, 4 timer. Denne eksamensformen måler faglig og teoretisk kunnskap samt evne til å arbeide under press
+ 
+Hjemmeeksamen (individuell eller i gruppe). Denne eksamensformen måler analytiske ferdigheter, faglig og teoretisk kunnskap, skriftlig formidlingsevne samt evne til å samarbeide dersom man løser oppgaven i gruppe.
+ 
+Veiledet oppgave individuell eller i gruppe. Denne eksamensformen måler evne til å bruke kunnskaper på nye områder, analytiske ferdigheter, evne til å tenke selvstendig og kritisk, skriftlig formidlingsevne, faglig og teoretisk kunnskap, evne til å tilegne seg ny kunnskap, metodiske ferdigheter, evne til å administrere og koordinere oppgaver, og evne til å samarbeide
+ 
+Muntlig eksamen (gruppepresentasjon). Denne eksamensformen måler faglig og teoretisk kunnskap, muntlig formidlingsevne, evne til å administrere og koordinere oppgaver og evne til å samarbeide
+ 
+I alle emner benyttes graderte bokstavkarakterer, A-F, der E er laveste beståtte karakter. Obligatorisk arbeidskrav og eksamensform for det enkelte emne er angitt i emnebeskrivelsene
+
+Studentutveksling og internasjonalisering
+USN tilbyr studenter som ønsker det et studie- eller praksisopphold i utlandet av tre til tolv måneders varighet ved en av USNs partnerinstitusjoner. Vi oppfordrer studenter til å benytte muligheten til å bli kjent med andre deler av verden, og til å skaffe seg kunnskaper og erfaringer som en bare får gjennom et utenlandsopphold. Økte språkkunnskaper, større kulturell forståelse, internasjonal erfaring og nye faglige perspektiver, er noe av utbyttet studenten får gjennom internasjonale studier.
+ 
+I bachelorprogrammet i IT og informasjonssystemer er 5. semester tilrettelagt for et utenlandsopphold av minimum tre måneders varighet. USN har blant annet gode avtaler som er særlig godt egnet for IT-studenter i USA, Storbritannia, Frankrike, Tyskland og Australia. 
+ 
+Informasjon om mulighetene for et utvekslingsopphold gjennom høyskolens internasjonale partnere er tilgjengelig på høyskolens nett. Fakultetet har også flere sommerskoleprogrammer som tilbys i samarbeid med partnerinstitusjoner i utlandet, som er godt egnet for IT-studenter, og det finnes praksismuligheter i utlandet for studenter som ønsker dette.
+ 
+Internasjonalisering betyr også at en del emner i USN vil bli undervist på engelsk og tilrettelagt slik at internasjonale utvekslingsstudenter kan studere ett til to semestre ved høyskolen, og for å gi høgskolens egne studenter en internasjonal dimensjon i løpet av studietiden. Det vil også kunne forekomme at gjesteforelesere fra høyskolens internasjonale partnerinstitusjoner underviser på engelsk, og at studenter får mulighet til å delta i internasjonale prosjektuker i samarbeid med høyskolens partnere.
+ 
+Studentene kan kontakte studieveileder eller internasjonalt kontor dersom de ønsker et studieopphold i utlandet.
+
+Annet
+Det forutsettes arbeid i gruppe gjennom studiet, da dette fyller viktige læringsmål for studiet i sin helhet, samt læringsmål i enkelte emner.  Videre er dette viktig for at studenten skal tilegne seg egenskaper som er tilnærmet en arbeidslivskontekst etter fullført studium. Faglærer fastsetter gruppestørrelse, -sammensetning, og praktisk gjennomføring av emnet.
+ 
+Alle studenter må ha en studieprogresjon som tilsvarer 50 prosent av normert progresjon pr studieår. Studenter kan av dokumenterte, særlige grunner søke om endret utdanningsplan med redusert progresjon, jf. forskrift om studier og eksamen ved Universitetet i Sørøst-Norge.
+ 
+Undervisning i enkelte emner kan foregå på engelsk.  
+Studenter som har fullført og bestått annen utdanning fra godkjente universiteter og høyskoler, kan søke om å få innpasset denne som del av graden ved USN. Fritak i bachelorstudiet i IT og Informasjonssystemer innvilges dersom studenten har bestått utdanning som samsvarer med emner ved USN både med tanke på omfang, innhold og nivå. Studiepoengene kan bli redusert i den grad studenten har eller velger emner som overlapper hverandre. Søknadsskjema og mer informasjon finner du på intranett. 
+
+
+
+
+
+
+
+
+Studiemodell
+2026 Høst2027 Vår2027 Høst2028 VårDatabase 1Praktisk prosjektarbeidApplikasjonsutvikling for webInformasjonssystemerSystemutviklingDatabase 2Objektorientert programmering 2Grunnleggende programmering 1Grunnleggende programmering 2Objektorientert programmering 1Samfunnsvitenskapelig metodeWebutvikling og HCIOrganisering og ledelseEtikk og samfunnsansvarInformasjonssikkerhet
