@@ -22,28 +22,27 @@ Studiet (både eksisterende og nytt) er et 3-årig bachelorstudium, som altså b
     - Operativsystemer og nettverk
     - Programvaretesting
     - Programvaresikkerhet
-    - Datavitenskap og visualisering
 - Ny studieplan bør ta med en god del av læringsmålene i eksisterende studieplan, se beskrivelse av nye emner under.
 
 ## Mulig oppbygging av ny studieplan
 
 ### 1. år
 
-| Høst                        | Vår                   |
-| --------------------------- | --------------------- |
-| Informasjonssystemer        | Praktisk prosjekt     |
-| Universell utforming og HCI | Databaser             |
-| Programmering               | Informasjonssikkerhet |
-| Internet of Things          | XR/AR                 |
+| Høst                        | Vår                       |
+| --------------------------- | ------------------------- |
+| Informasjonssystemer        | Systemutvikling           |
+| Universell utforming og HCI | Databaser                 |
+| Programmering               | Informasjonssikkerhet     |
+| Praktisk prosjekt           | Augmented Reality (XR/AR) |
 
 ### 2. år
 
 | Høst                          | Vår                          |
 | ----------------------------- | ---------------------------- |
 | Objektorientert programmering | Innovasjon i Team            |
-| Datavitenskap og viualisering | Applikasjonsutvikling med KI |
-| Programvaretesting            | Systemutvikling              |
-| Operativsystemer og nettverk  | Strategisk bruk av IT        |
+| Strategisk bruk av IT         | Applikasjonsutvikling        |
+| Programvaretesting            | Internet of Things           |
+| Operativsystemer og nettverk  | Algoritmer og datastrukturer |
 
 ### 3. år
 
@@ -67,7 +66,6 @@ Dette er emner som velges fra andre fagområder, og trenger ikke nærmere beskri
 
 - Internship (kan erstatte Bacheloroppgave)
 - Spesialpensum
-- Big Data og Business Intelligence
 - Geografiske informasjonssystemer
 
 ## Filer som skal genereres
@@ -79,22 +77,22 @@ Ny studieplan skal beskrives på et antall nye filer:
 - På mappe søknad skal det lages en fil med momenter som ledelsen ved universitetet trenger for å kunne godkjenne ny studieplan.
 - På rotmappen skal det lages en fil som inneholder en diskusjon og refleksjon om overgangen fra gammel til ny studieplan, om det er innslag av "overlapp" mellom ulike emner og generelt om det er noen problemstillinger faggruppa burde tenke gjennom før man går videre med arbeidet.
 
-## Detaljer om nye emner
+## Detaljer om emnene
 
 - Informasjonssystemer: Stort sett som eksisterende emne Informasjonssystemer. Få inn litt nytt stoff om KI.
 - Universell utforming og HCI: Nytt emne. Ta med noen læringsmål fra eksisterende emne Web og HCI.
 - Programmering: En sammenslåing av Grunnleggende programmering 1 og 2.
 - Internet of Things: Nytt emne. Foreslå innhold.
-- Praktisk prosjekt: Stort sett som eksisterende emne Praktisk prosjektarbeid.
+- Praktisk prosjekt: Stort sett som eksisterende emne Praktisk prosjektarbeid, men utvidet med KI-assistert utvikling og "vibbekoding".
 - Databaser: Stort sett som eksisterende emne Database 1, utvidet med stoff om skydatabaser og NoSQL-databaser fra Database 2, samt KI (som betyr at "klassisk" databasestoff, f.eks. om relasjonsmodellen, må behandles noe mer overfladisk).
 - Informasjonssikkerhet: Stort sett som eksisterende emne Informasjonssikkerhet.
-- XR/AR: Nytt emne. Foreslå innhold.
-- Objektorientert programmering: I hovedsak basert på Objektorientert programmering 1, utvidet med noen temaer fra Objektorientert programmering 2, samt Algoritmer og datastrukturer.
-- Datavitenskap og viualisering: Nytt emne. Foreslå innhold.
+- Augmented Reality (XR/AR): Nytt emne. Foreslå innhold.
+- Objektorientert programmering: I hovedsak basert på Objektorientert programmering 1, utvidet med noen temaer fra Objektorientert programmering 2.
+- Algoritmer og datastrukturer: Som nåværende emne, men litt forenklet.
 - Programvaretesting: Nytt emne. Allerede beskrevet på mappe emnebeskrivelser. Sjekk om det bør gjøres justeringer.
 - Operativsystemer og nettverk: Nytt emne. Foreslå innhold.
 - Innovasjon i Team: Dette emnet blir undervist av andre fagmiljøer og trenger ikke beskrivelse.
-- Applikasjonsutvikling med KI: Stort sett som eksisterende emne Applikasjonsutvikling for web. Det skal fortsatt være et fullstack-kurs, men man skal bygge løsninger både for web og mobil, og det skal legges vekt på utvikling med KI, blant annet "spec-driven development". I eksisterende plan er emnet 15 studiepoeng, men nedskaleres nå til 7.5 studiepoeng fordi man fjerner et større prosjektarbeid tilsvarende 7.5 studiepoeng.
+- Applikasjonsutvikling: Mye likt i forhold til eksisterende emne Applikasjonsutvikling for web. Det skal fortsatt være et fullstack-kurs, men man skal bygge løsninger både for web og mobil, og det skal legges vekt på utvikling med KI, blant annet "spec-driven development". I eksisterende plan er emnet 15 studiepoeng, men nedskaleres nå til 7.5 studiepoeng fordi man fjerner et større prosjektarbeid tilsvarende 7.5 studiepoeng.
 - Systemutvikling: Stort sett som eksisterende emne Systemutvikling.
 - Strategisk bruk av IT: Stort sett som eksisterende emne Strategisk bruk av IT.
 - Bacheloroppgave i IT: Stort sett som eksisterende emne Bacheloroppgave i IT.
