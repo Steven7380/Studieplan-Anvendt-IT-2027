@@ -204,6 +204,12 @@
       fieldForm.addEventListener("mousedown", (event) => {
         if (event.target.closest("[data-format-command]")) {
           event.preventDefault();
+          return;
+        }
+
+        if (event.target.matches("[contenteditable][data-edit-kind='section']")) {
+          activeRichEditor = event.target;
+          savedRichSelection = null;
         }
       });
 
@@ -247,6 +253,17 @@
 
         if (event.target.matches("[data-format-color]")) {
           applyFormat("foreColor", event.target.value);
+        }
+      });
+
+      document.addEventListener("selectionchange", () => {
+        const selection = window.getSelection();
+        if (!selection || selection.rangeCount === 0) return;
+
+        const editor = findRichEditor(selection.anchorNode);
+        if (editor) {
+          activeRichEditor = editor;
+          savedRichSelection = selection.getRangeAt(0).cloneRange();
         }
       });
 
@@ -626,6 +643,12 @@
         ) {
           savedRichSelection = range.cloneRange();
         }
+      }
+
+      function findRichEditor(node) {
+        if (!node) return null;
+        const element = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
+        return element?.closest?.("[contenteditable][data-edit-kind='section']") || null;
       }
 
       function restoreRichSelection() {
