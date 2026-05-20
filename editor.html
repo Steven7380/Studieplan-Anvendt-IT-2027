@@ -900,13 +900,17 @@
 
       function addPreviewBase(html) {
         const baseHref = currentPath && currentPath.includes("/")
-          ? new URL(currentPath, location.href).href
+          ? new URL(`/${currentPath}`, location.origin).href
           : location.href;
         const baseTag = `<base href="${baseHref}">`;
+        const styleTag = `<link rel="stylesheet" href="${new URL("/styles.css", location.origin).href}">`;
+        const headContent = `${baseTag}${styleTag}`;
         if (/<head[^>]*>/i.test(html)) {
-          return html.replace(/<head([^>]*)>/i, `<head$1>${baseTag}`);
+          return html
+            .replace(/<link[^>]+href=["'][^"']*styles\.css["'][^>]*>/i, "")
+            .replace(/<head([^>]*)>/i, `<head$1>${headContent}`);
         }
-        return `${baseTag}${html}`;
+        return `${headContent}${html}`;
       }
 
       function switchTab(tabName) {
