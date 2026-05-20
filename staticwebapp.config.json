@@ -2,6 +2,20 @@
   "platform": {
     "apiRuntime": "node:20"
   },
+  "routes": [
+    {
+      "route": "/editor",
+      "rewrite": "/editor.html"
+    },
+    {
+      "route": "/studieomtale/editor.html",
+      "rewrite": "/editor.html"
+    },
+    {
+      "route": "/emnebeskrivelser/editor.html",
+      "rewrite": "/editor.html"
+    }
+  ],
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin"
