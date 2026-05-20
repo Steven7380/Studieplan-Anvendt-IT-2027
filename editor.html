@@ -294,16 +294,26 @@
           }
         }
 
-        throw new Error(
-          `${lastError?.message || "Failed to fetch"}. Apne editoren fra http://127.0.0.1:8010/editor.html og kontroller at serveren kjører.`
-        );
+        throw new Error(`${lastError?.message || "Failed to fetch"}. ${loadHelpMessage()}`);
       }
 
       function courseFileUrls(path) {
-        const sameOrigin = new URL(path, location.href).href;
+        const sameOrigin = new URL(`/${path}`, location.origin).href;
+        if (!isLocalEditor()) {
+          return [sameOrigin];
+        }
+
         const localNodeByIp = new URL(path, "http://127.0.0.1:8010/").href;
         const localNodeByName = new URL(path, "http://localhost:8010/").href;
         return [...new Set([sameOrigin, localNodeByIp, localNodeByName])];
+      }
+
+      function loadHelpMessage() {
+        if (isLocalEditor()) {
+          return "Apne editoren fra http://127.0.0.1:8010/editor.html og kontroller at serveren kjorer.";
+        }
+
+        return "Kontroller at filen finnes i Azure og prov a hard-refresh siden.";
       }
 
       function setSource(html, pathLabel) {
@@ -800,12 +810,20 @@
 
       function saveApiEndpoints() {
         const sameOrigin = new URL("/api/save-html", location.origin).href;
+        if (!isLocalEditor()) {
+          return [sameOrigin];
+        }
+
         const localNodeByIp = "http://127.0.0.1:8010/api/save-html";
         const localNodeByName = "http://localhost:8010/api/save-html";
         const currentHostNode = location.hostname
           ? `http://${location.hostname}:8010/api/save-html`
           : localNodeByIp;
         return [...new Set([sameOrigin, currentHostNode, localNodeByIp, localNodeByName])];
+      }
+
+      function isLocalEditor() {
+        return ["localhost", "127.0.0.1", ""].includes(location.hostname);
       }
 
       async function readJsonResponse(response) {
