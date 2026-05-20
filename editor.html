@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emnebeskrivelse-editor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="kurs-tittel">
+        Bachelor i Anvendt informasjonsteknologi &middot; Redigering
+      </div>
+      <h1>Emnebeskrivelse-editor</h1>
+      <div class="meta">Rediger felter, forh&aring;ndsvis og lagre som HTML</div>
+    </header>
+
+    <nav class="breadcrumb">
+      <a href="index.html">Hjem</a>
+      <span>&rsaquo;</span>
+      Emnebeskrivelse-editor
+    </nav>
+
+    <main class="editor-main">
+      <section class="editor-toolbar" aria-label="Editorvalg">
+        <div class="editor-field editor-field-wide">
+          <label for="courseSelect">Velg emnefil</label>
+          <select id="courseSelect">
+            <option value="">Velg en emnebeskrivelse</option>
+          </select>
+        </div>
+
+        <div class="editor-field">
+          <label for="documentTitle">Dokumenttittel</label>
+          <input
+            id="documentTitle"
+            type="text"
+            placeholder="Tittel hentes fra HTML"
+            autocomplete="off" />
+        </div>
+
+        <div class="editor-actions" aria-label="Editorhandlinger">
+          <button type="button" id="openFileButton">Open file</button>
+          <button type="button" id="saveServerButton">Save to server</button>
+          <button type="button" id="saveFileButton">Save file</button>
+          <button type="button" id="downloadButton">Download HTML</button>
+          <button type="button" id="copyButton">Copy HTML</button>
+          <button type="button" id="resetButton">Reload</button>
+        </div>
+      </section>
+
+      <div class="editor-status" id="statusMessage" role="status">
+        Velg en emnebeskrivelse for &aring; starte.
+      </div>
+
+      <div class="editor-tabs" role="tablist" aria-label="Editorvisning">
+        <button type="button" class="active" data-editor-tab="form">Form</button>
+        <button type="button" data-editor-tab="html">HTML</button>
+      </div>
+
+      <section class="editor-layout" aria-label="Felteditor og forh&aring;ndsvisning">
+        <div class="editor-pane editor-form-pane" data-editor-panel="form">
+          <div class="editor-pane-header">
+            <h2>Felter</h2>
+            <span id="formMeta">Ingen fil valgt</span>
+          </div>
+          <form id="fieldForm" class="field-form"></form>
+        </div>
+
+        <div class="editor-pane editor-html-pane is-hidden" data-editor-panel="html">
+          <div class="editor-pane-header">
+            <h2>HTML</h2>
+            <span id="sourceMeta">Ingen fil valgt</span>
+          </div>
+          <textarea
+            id="htmlSource"
+            spellcheck="false"
+            placeholder="HTML-koden vises her n&aring;r du velger en emnefil."></textarea>
+        </div>
+
+        <div class="editor-pane">
+          <div class="editor-pane-header">
+            <h2>Forh&aring;ndsvisning</h2>
+            <span id="previewMeta">Live preview</span>
+          </div>
+          <iframe
+            id="previewFrame"
+            title="Forh&aring;ndsvisning av emnebeskrivelse"
+            sandbox="allow-same-origin"></iframe>
+        </div>
+      </section>
+
+      <div class="info info-inline">
+        <strong>Merk:</strong> Formfeltene lagrer tilbake til HTML-strukturen.
+        Bruk <strong>Save to server</strong> n&aring;r siden kj&oslash;res via
+        <code>server.js</code>. Bruk <strong>Save file</strong> eller
+        <strong>Download HTML</strong> som fallback.
+      </div>
+    </main>
+
+    <footer>
+      Emnebeskrivelse-editor &middot; Bachelor i Anvendt informasjonsteknologi
+    </footer>
+
+    <script>
+      const courseFiles = [
+        ["Informasjonssystemer", "emnebeskrivelser/Informasjonssystemer/emnebeskrivelse.html"],
+        ["Universell utforming og HCI", "emnebeskrivelser/Universell-utforming-og-HCI/emnebeskrivelse.html"],
+        ["Programmering", "emnebeskrivelser/Programmering/emnebeskrivelse.html"],
+        ["Praktisk prosjekt", "emnebeskrivelser/Praktisk-prosjekt/emnebeskrivelse.html"],
+        ["Systemutvikling", "emnebeskrivelser/Systemutvikling/emnebeskrivelse.html"],
+        ["Databaser", "emnebeskrivelser/Databaser/emnebeskrivelse.html"],
+        ["Informasjonssikkerhet", "emnebeskrivelser/Informasjonssikkerhet/emnebeskrivelse.html"],
+        ["Augmented Reality (XR/AR)", "emnebeskrivelser/XR-AR/emnebeskrivelse.html"],
+        ["Objektorientert programmering", "emnebeskrivelser/Objektorientert-programmering/emnebeskrivelse.html"],
+        ["Strategisk bruk av IT", "emnebeskrivelser/Strategisk-bruk-av-IT/emnebeskrivelse.html"],
+        ["Programvaretesting", "emnebeskrivelser/Programvaretesting/emnebeskrivelse.html"],
+        ["Operativsystemer og nettverk", "emnebeskrivelser/Operativsystemer-og-nettverk/emnebeskrivelse.html"],
+        ["Applikasjonsutvikling", "emnebeskrivelser/Applikasjonsutvikling/emnebeskrivelse.html"],
+        ["Internet of Things", "emnebeskrivelser/Internet-of-Things/emnebeskrivelse.html"],
+        ["Algoritmer og datastrukturer", "emnebeskrivelser/Algoritmer-og-datastrukturer/emnebeskrivelse.html"],
+        ["Bacheloroppgave i IT", "emnebeskrivelser/Bacheloroppgave/emnebeskrivelse.html"],
+        ["Kunstig intelligens og maskinlaering", "emnebeskrivelser/Kunstig-intelligens-og-maskinlaering/emnebeskrivelse.html"],
+        ["Programvaresikkerhet", "emnebeskrivelser/Programvaresikkerhet/emnebeskrivelse.html"],
+        ["Datavitenskap og visualisering", "emnebeskrivelser/Datavitenskap-og-visualisering/emnebeskrivelse.html"],
+        ["Applikasjonsutvikling med KI", "emnebeskrivelser/Applikasjonsutvikling-med-KI/emnebeskrivelse.html"]
+      ];
+
+      const courseSelect = document.querySelector("#courseSelect");
+      const documentTitle = document.querySelector("#documentTitle");
+      const fieldForm = document.querySelector("#fieldForm");
+      const htmlSource = document.querySelector("#htmlSource");
+      const previewFrame = document.querySelector("#previewFrame");
+      const statusMessage = document.querySelector("#statusMessage");
+      const formMeta = document.querySelector("#formMeta");
+      const sourceMeta = document.querySelector("#sourceMeta");
+      const previewMeta = document.querySelector("#previewMeta");
+      const openFileButton = document.querySelector("#openFileButton");
+      const saveServerButton = document.querySelector("#saveServerButton");
+      const saveFileButton = document.querySelector("#saveFileButton");
+      const downloadButton = document.querySelector("#downloadButton");
+      const copyButton = document.querySelector("#copyButton");
+      const resetButton = document.querySelector("#resetButton");
+      const tabButtons = document.querySelectorAll("[data-editor-tab]");
+      const panels = document.querySelectorAll("[data-editor-panel]");
+
+      let currentPath = "";
+      let fileHandle = null;
+      let parsedDocument = null;
+      let lastDownloadedUrl = null;
+      let previewTimer = null;
+      let syncingHtml = false;
+      let activeRichEditor = null;
+      let savedRichSelection = null;
+
+      courseFiles.forEach(([name, path]) => {
+        const option = document.createElement("option");
+        option.value = path;
+        option.textContent = name;
+        courseSelect.append(option);
+      });
+
+      courseSelect.addEventListener("change", () => {
+        if (courseSelect.value) loadCourse(courseSelect.value);
+      });
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => switchTab(button.dataset.editorTab));
+      });
+
+      documentTitle.addEventListener("input", () => {
+        if (!parsedDocument) return;
+        setText("title", documentTitle.value);
+        commitDocument("Dokumenttittel oppdatert.");
+      });
+
+      fieldForm.addEventListener("input", (event) => {
+        if (!parsedDocument || !event.target.matches("[data-edit-kind]")) return;
+        applyFieldChange(event.target);
+        commitDocument("Felt oppdatert.");
+      });
+
+      fieldForm.addEventListener("focusin", (event) => {
+        if (event.target.matches("[contenteditable][data-edit-kind='section']")) {
+          activeRichEditor = event.target;
+          saveRichSelection();
+        }
+      });
+
+      fieldForm.addEventListener("keyup", (event) => {
+        if (event.target.matches("[contenteditable][data-edit-kind='section']")) {
+          activeRichEditor = event.target;
+          saveRichSelection();
+        }
+      });
+
+      fieldForm.addEventListener("mouseup", (event) => {
+        if (event.target.matches("[contenteditable][data-edit-kind='section']")) {
+          activeRichEditor = event.target;
+          saveRichSelection();
+        }
+      });
+
+      fieldForm.addEventListener("mousedown", (event) => {
+        if (event.target.closest("[data-format-command]")) {
+          event.preventDefault();
+        }
+      });
+
+      fieldForm.addEventListener("click", (event) => {
+        const addRowButton = event.target.closest("[data-add-table-row]");
+        if (addRowButton) {
+          event.preventDefault();
+          addCourseContentRow(Number(addRowButton.dataset.sectionIndex));
+          return;
+        }
+
+        const removeRowButton = event.target.closest("[data-remove-table-row]");
+        if (removeRowButton) {
+          event.preventDefault();
+          removeCourseContentRow(
+            Number(removeRowButton.dataset.sectionIndex),
+            Number(removeRowButton.dataset.rowIndex)
+          );
+          return;
+        }
+
+        const button = event.target.closest("[data-format-command]");
+        if (button) {
+          event.preventDefault();
+          applyFormat(button.dataset.formatCommand, button.dataset.formatValue || null);
+          return;
+        }
+
+        if (event.target.matches("[contenteditable][data-edit-kind='section']")) {
+          activeRichEditor = event.target;
+          saveRichSelection();
+        }
+      });
+
+      fieldForm.addEventListener("change", (event) => {
+        if (event.target.matches("[data-format-select]")) {
+          applyFormat(event.target.dataset.formatSelect, event.target.value);
+          event.target.selectedIndex = 0;
+          return;
+        }
+
+        if (event.target.matches("[data-format-color]")) {
+          applyFormat("foreColor", event.target.value);
+        }
+      });
+
+      htmlSource.addEventListener("input", () => {
+        if (syncingHtml) return;
+        parseAndRenderForm(htmlSource.value, currentPath || "HTML-kilde");
+        saveDraft();
+        schedulePreview();
+        setStatus("HTML oppdatert og utkast lagret.");
+      });
+
+      openFileButton.addEventListener("click", openSelectedCourseInEditor);
+      saveServerButton.addEventListener("click", saveToServer);
+      saveFileButton.addEventListener("click", saveLocalFile);
+      downloadButton.addEventListener("click", downloadHtml);
+      copyButton.addEventListener("click", copyHtml);
+      resetButton.addEventListener("click", reloadCurrentFile);
+
+      async function loadCourse(path) {
+        currentPath = path;
+        fileHandle = null;
+        localStorage.removeItem(draftKey(path));
+
+        try {
+          const response = await fetchCourseFile(path);
+          const html = await response.text();
+          setSource(html, path);
+          setStatus(`Lastet ${path}.`);
+        } catch (error) {
+          setStatus(`Kunne ikke laste filen: ${error.message}`);
+        }
+      }
+
+      async function fetchCourseFile(path) {
+        const urls = courseFileUrls(path);
+        let lastError = null;
+
+        for (const url of urls) {
+          try {
+            const response = await fetch(url, { cache: "no-store" });
+            if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+            return response;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+
+        throw new Error(
+          `${lastError?.message || "Failed to fetch"}. Apne editoren fra http://127.0.0.1:8010/editor.html og kontroller at serveren kjører.`
+        );
+      }
+
+      function courseFileUrls(path) {
+        const sameOrigin = new URL(path, location.href).href;
+        const localNodeByIp = new URL(path, "http://127.0.0.1:8010/").href;
+        const localNodeByName = new URL(path, "http://localhost:8010/").href;
+        return [...new Set([sameOrigin, localNodeByIp, localNodeByName])];
+      }
+
+      function setSource(html, pathLabel) {
+        currentPath = pathLabel;
+        parseAndRenderForm(html, pathLabel);
+        writeHtmlSource(html);
+        updatePreview();
+      }
+
+      function parseAndRenderForm(html, pathLabel) {
+        parsedDocument = new DOMParser().parseFromString(html, "text/html");
+        const parserError = parsedDocument.querySelector("parsererror");
+        if (parserError) {
+          setStatus("HTML-kilden kunne ikke tolkes som gyldig HTML.");
+          return;
+        }
+
+        documentTitle.value = parsedDocument.querySelector("title")?.textContent.trim() || "";
+        formMeta.textContent = pathLabel;
+        sourceMeta.textContent = pathLabel;
+        renderFieldForm();
+      }
+
+      function renderFieldForm() {
+        fieldForm.innerHTML = "";
+        if (!parsedDocument) {
+          fieldForm.append(emptyMessage("Velg en emnebeskrivelse for a redigere feltene."));
+          return;
+        }
+
+        fieldForm.append(sectionTitle("Grunnopplysninger"));
+        fieldForm.append(textField("Emnenavn", "header-title", text("header h1")));
+        fieldForm.append(textField("Topptekst", "course-label", text("header .kurs-tittel")));
+        fieldForm.append(textField("Sidetype", "header-meta", text("header .meta")));
+        fieldForm.append(textField("Bunntekst", "footer", text("footer")));
+
+        const infoRows = [...parsedDocument.querySelectorAll("main table:first-of-type tbody tr")];
+        if (infoRows.length) {
+          fieldForm.append(sectionTitle("Emneinformasjon"));
+          infoRows.forEach((row, index) => {
+            const cells = row.querySelectorAll("td");
+            if (cells.length < 2) return;
+            fieldForm.append(textField(cells[0].textContent.trim(), "info", cells[1].textContent.trim(), index));
+          });
+        }
+
+        const sections = getEditableSections();
+        if (sections.length) {
+          fieldForm.append(sectionTitle("Innhold"));
+          sections.forEach((section, index) => {
+            if (isCourseContentSection(section) && getCourseContentTable(index)) {
+              fieldForm.append(courseContentTableField(index));
+            } else {
+              fieldForm.append(htmlField(section.title, "section", section.html, index));
+            }
+          });
+        }
+      }
+
+      function getEditableSections() {
+        const headings = [...parsedDocument.querySelectorAll("main h2")];
+        const infoTable = parsedDocument.querySelector("main table:first-of-type");
+        return headings.map((heading, index) => {
+          const nodes = [];
+          let node = heading.nextElementSibling;
+          while (node && node.tagName !== "H2") {
+            if (node !== infoTable) {
+              nodes.push(node.outerHTML);
+            }
+            node = node.nextElementSibling;
+          }
+          return {
+            index,
+            title: heading.textContent.trim(),
+            html: nodes.join("\n\n")
+          };
+        });
+      }
+
+      function isCourseContentSection(section) {
+        return normalizeLabel(section.title) === "emnets innhold";
+      }
+
+      function normalizeLabel(value) {
+        return String(value || "")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .trim();
+      }
+
+      function sectionTitle(label) {
+        const heading = document.createElement("h3");
+        heading.className = "field-form-title";
+        heading.textContent = label;
+        return heading;
+      }
+
+      function textField(label, kind, value, index = "") {
+        const wrapper = document.createElement("label");
+        wrapper.className = "field-row";
+        wrapper.innerHTML = `<span>${escapeHtml(label)}</span>`;
+        const input = document.createElement("input");
+        input.type = "text";
+        input.value = value;
+        input.dataset.editKind = kind;
+        input.dataset.editIndex = index;
+        wrapper.append(input);
+        return wrapper;
+      }
+
+      function htmlField(label, kind, value, index) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "field-row field-row-large rich-field";
+        wrapper.innerHTML = `<span>${escapeHtml(label)}</span>`;
+        wrapper.append(richTextToolbar());
+
+        const editor = document.createElement("div");
+        editor.className = "rich-html-editor";
+        editor.contentEditable = "true";
+        editor.spellcheck = false;
+        editor.innerHTML = value;
+        editor.dataset.editKind = kind;
+        editor.dataset.editIndex = index;
+        wrapper.append(editor);
+        return wrapper;
+      }
+
+      function courseContentTableField(sectionIndex) {
+        const table = getCourseContentTable(sectionIndex);
+        const headers = [...table.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+        const rows = [...table.querySelectorAll("tbody tr")];
+        const wrapper = document.createElement("div");
+        wrapper.className = "field-row table-editor-field";
+        wrapper.innerHTML = `<span>Emnets innhold</span>`;
+
+        const editor = document.createElement("div");
+        editor.className = "table-editor";
+        editor.dataset.sectionIndex = sectionIndex;
+
+        const header = document.createElement("div");
+        header.className = "table-editor-header";
+        header.innerHTML = `
+          <strong>${escapeHtml(headers[0] || "#")}</strong>
+          <strong>${escapeHtml(headers[1] || "Tema")}</strong>
+          <strong>${escapeHtml(headers[2] || "Nokkelbegreper / verktoy")}</strong>
+          <strong>Handling</strong>
+        `;
+        editor.append(header);
+
+        rows.forEach((row, rowIndex) => {
+          const cells = row.querySelectorAll("td");
+          const line = document.createElement("div");
+          line.className = "table-editor-row";
+          line.innerHTML = `
+            <div class="row-number">${rowIndex + 1}</div>
+            <input type="text" value="${escapeAttribute(cells[1]?.textContent.trim() || "")}" data-edit-kind="lesson-topic" data-section-index="${sectionIndex}" data-row-index="${rowIndex}" />
+            <input type="text" value="${escapeAttribute(cells[2]?.textContent.trim() || "")}" data-edit-kind="lesson-keywords" data-section-index="${sectionIndex}" data-row-index="${rowIndex}" />
+            <button type="button" data-remove-table-row data-section-index="${sectionIndex}" data-row-index="${rowIndex}">Remove</button>
+          `;
+          editor.append(line);
+        });
+
+        const actions = document.createElement("div");
+        actions.className = "table-editor-actions";
+        actions.innerHTML = `<button type="button" data-add-table-row data-section-index="${sectionIndex}">Add row</button>`;
+        editor.append(actions);
+        wrapper.append(editor);
+        return wrapper;
+      }
+
+      function richTextToolbar() {
+        const toolbar = document.createElement("div");
+        toolbar.className = "rich-text-toolbar";
+        toolbar.innerHTML = `
+          <button type="button" data-format-command="bold" title="Bold"><strong>B</strong></button>
+          <button type="button" data-format-command="italic" title="Italic"><em>I</em></button>
+          <button type="button" data-format-command="underline" title="Underline"><u>U</u></button>
+          <button type="button" data-format-command="insertUnorderedList" title="Bullet list">List</button>
+          <button type="button" data-format-command="insertOrderedList" title="Numbered list">1. List</button>
+          <select data-format-select="fontName" title="Font type">
+            <option value="">Font</option>
+            <option value="Aptos">Aptos</option>
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times</option>
+            <option value="Courier New">Courier</option>
+          </select>
+          <select data-format-select="fontSize" title="Font size">
+            <option value="">Size</option>
+            <option value="2">Small</option>
+            <option value="3">Normal</option>
+            <option value="4">Large</option>
+            <option value="5">XL</option>
+          </select>
+          <label class="color-tool" title="Text color">
+            Color
+            <input type="color" data-format-color value="#1c2331" />
+          </label>
+          <button type="button" data-format-command="createLink" title="Create link">Link</button>
+          <button type="button" data-format-command="removeFormat" title="Remove formatting">Clear</button>
+        `;
+        return toolbar;
+      }
+
+      function emptyMessage(message) {
+        const paragraph = document.createElement("p");
+        paragraph.className = "field-empty";
+        paragraph.textContent = message;
+        return paragraph;
+      }
+
+      function applyFieldChange(field) {
+        const kind = field.dataset.editKind;
+        const index = Number(field.dataset.editIndex);
+
+        if (kind === "header-title") {
+          setText("header h1", field.value);
+          updateBreadcrumbTitle(field.value);
+          return;
+        }
+        if (kind === "course-label") {
+          setText("header .kurs-tittel", field.value);
+          return;
+        }
+        if (kind === "header-meta") {
+          setText("header .meta", field.value);
+          return;
+        }
+        if (kind === "footer") {
+          setText("footer", field.value);
+          return;
+        }
+        if (kind === "info") {
+          const row = parsedDocument.querySelectorAll("main table:first-of-type tbody tr")[index];
+          const cell = row?.querySelectorAll("td")[1];
+          if (cell) cell.textContent = fieldValue(field);
+          return;
+        }
+        if (kind === "section") {
+          replaceSectionContent(index, fieldValue(field));
+          return;
+        }
+        if (kind === "lesson-topic" || kind === "lesson-keywords") {
+          updateCourseContentCell(field);
+        }
+      }
+
+      function fieldValue(field) {
+        return field.isContentEditable ? field.innerHTML : field.value;
+      }
+
+      function applyFormat(command, value) {
+        if (!activeRichEditor) {
+          setStatus("Klikk i et innholdsfelt og marker tekst forst.");
+          return;
+        }
+
+        activeRichEditor.focus();
+        restoreRichSelection();
+        let commandValue = value;
+        if (command === "createLink") {
+          commandValue = prompt("Lenkeadresse:");
+          if (!commandValue) return;
+        }
+
+        if (command === "bold") {
+          wrapSelection("strong");
+        } else if (command === "foreColor") {
+          wrapSelection("span", { style: `color: ${commandValue}` });
+        } else {
+          document.execCommand(command, false, commandValue);
+        }
+        applyFieldChange(activeRichEditor);
+        commitDocument("Tekstformat oppdatert.");
+        saveRichSelection();
+      }
+
+      function wrapSelection(tagName, attributes = {}) {
+        restoreRichSelection();
+        const selection = window.getSelection();
+        if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return;
+
+        const range = selection.getRangeAt(0);
+        if (!activeRichEditor.contains(range.commonAncestorContainer)) return;
+
+        const wrapper = document.createElement(tagName);
+        Object.entries(attributes).forEach(([name, value]) => {
+          wrapper.setAttribute(name, value);
+        });
+
+        wrapper.append(range.extractContents());
+        range.insertNode(wrapper);
+
+        const nextRange = document.createRange();
+        nextRange.selectNodeContents(wrapper);
+        selection.removeAllRanges();
+        selection.addRange(nextRange);
+        savedRichSelection = nextRange.cloneRange();
+      }
+
+      function saveRichSelection() {
+        const selection = window.getSelection();
+        if (!selection || selection.rangeCount === 0 || !activeRichEditor) return;
+
+        const range = selection.getRangeAt(0);
+        if (
+          activeRichEditor.contains(range.commonAncestorContainer) ||
+          activeRichEditor === range.commonAncestorContainer
+        ) {
+          savedRichSelection = range.cloneRange();
+        }
+      }
+
+      function restoreRichSelection() {
+        if (!savedRichSelection) return;
+
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(savedRichSelection);
+      }
+
+      function getCourseContentTable(sectionIndex) {
+        const heading = parsedDocument.querySelectorAll("main h2")[sectionIndex];
+        if (!heading) return null;
+
+        let node = heading.nextElementSibling;
+        while (node && node.tagName !== "H2") {
+          if (node.tagName === "TABLE") return node;
+          node = node.nextElementSibling;
+        }
+        return null;
+      }
+
+      function updateCourseContentCell(field) {
+        const table = getCourseContentTable(Number(field.dataset.sectionIndex));
+        const row = table?.querySelectorAll("tbody tr")[Number(field.dataset.rowIndex)];
+        if (!row) return;
+
+        const cellIndex = field.dataset.editKind === "lesson-topic" ? 1 : 2;
+        const cell = row.querySelectorAll("td")[cellIndex];
+        if (cell) cell.textContent = field.value;
+      }
+
+      function addCourseContentRow(sectionIndex) {
+        const table = getCourseContentTable(sectionIndex);
+        const tbody = table?.querySelector("tbody");
+        if (!tbody) return;
+
+        const row = parsedDocument.createElement("tr");
+        row.innerHTML = `
+          <td></td>
+          <td>Nytt tema</td>
+          <td>Nokkelbegreper / verktoy</td>
+        `;
+        tbody.append(row);
+        renumberCourseContentRows(table);
+        renderFieldForm();
+        commitDocument("Rad lagt til.");
+      }
+
+      function removeCourseContentRow(sectionIndex, rowIndex) {
+        const table = getCourseContentTable(sectionIndex);
+        const rows = table ? [...table.querySelectorAll("tbody tr")] : [];
+        if (!rows[rowIndex]) return;
+
+        rows[rowIndex].remove();
+        renumberCourseContentRows(table);
+        renderFieldForm();
+        commitDocument("Rad fjernet.");
+      }
+
+      function renumberCourseContentRows(table) {
+        table.querySelectorAll("tbody tr").forEach((row, index) => {
+          const firstCell = row.querySelector("td");
+          if (firstCell) firstCell.textContent = String(index + 1);
+        });
+      }
+
+      function replaceSectionContent(sectionIndex, html) {
+        const heading = parsedDocument.querySelectorAll("main h2")[sectionIndex];
+        if (!heading) return;
+
+        const infoTable = parsedDocument.querySelector("main table:first-of-type");
+        let node = heading.nextElementSibling;
+        while (node && node.tagName !== "H2") {
+          const next = node.nextElementSibling;
+          if (node !== infoTable) {
+            node.remove();
+          }
+          node = next;
+        }
+
+        const template = parsedDocument.createElement("template");
+        template.innerHTML = html.trim();
+        heading.after(template.content.cloneNode(true));
+      }
+
+      function updateBreadcrumbTitle(value) {
+        const breadcrumbCourse = parsedDocument.querySelector("nav.breadcrumb a[href='emnebeskrivelse.html']");
+        if (breadcrumbCourse) breadcrumbCourse.textContent = value;
+      }
+
+      function commitDocument(message) {
+        const html = serializeDocument();
+        writeHtmlSource(html);
+        saveDraft();
+        schedulePreview();
+        setStatus(`${message} Utkast lagret i nettleseren.`);
+      }
+
+      function serializeDocument() {
+        return `<!doctype html>\n${parsedDocument.documentElement.outerHTML}`;
+      }
+
+      function writeHtmlSource(html) {
+        syncingHtml = true;
+        htmlSource.value = html;
+        syncingHtml = false;
+      }
+
+      function openSelectedCourseInEditor() {
+        if (!courseSelect.value) {
+          setStatus("Velg en emnefil fra listen forst.");
+          return;
+        }
+
+        loadCourse(courseSelect.value);
+      }
+
+      async function saveLocalFile() {
+        if (!fileHandle) {
+          setStatus("Apne en lokal HTML-fil forst, eller bruk Download HTML.");
+          return;
+        }
+
+        try {
+          const writable = await fileHandle.createWritable();
+          await writable.write(htmlSource.value);
+          await writable.close();
+          setStatus("Filen er lagret som HTML.");
+        } catch (error) {
+          setStatus(error.message);
+        }
+      }
+
+      async function saveToServer() {
+        if (!htmlSource.value) {
+          setStatus("Ingen HTML a lagre.");
+          return;
+        }
+
+        if (!courseFiles.some(([, path]) => path === currentPath)) {
+          setStatus("Velg en emnefil fra listen for a lagre tilbake til serveren.");
+          return;
+        }
+
+        try {
+          const result = await postHtmlToSaveApi();
+          localStorage.removeItem(draftKey(currentPath));
+          setStatus(`Lagret til server: ${result.path}`);
+        } catch (error) {
+          setStatus(`Serverlagring feilet: ${error.message}`);
+        }
+      }
+
+      async function postHtmlToSaveApi() {
+        const payload = JSON.stringify({
+          path: currentPath,
+          html: htmlSource.value
+        });
+        const endpoints = saveApiEndpoints();
+        let lastError = null;
+
+        for (const endpoint of endpoints) {
+          try {
+            const response = await fetch(endpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: payload
+            });
+            const result = await readJsonResponse(response);
+            if (!response.ok) throw new Error(result.error || "Kunne ikke lagre til serveren.");
+            return result;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+
+        throw new Error(
+          `${lastError?.message || "Save API er ikke tilgjengelig."} Start lagringsserveren med 'node server.js' og bruk http://127.0.0.1:8010/editor.html.`
+        );
+      }
+
+      function saveApiEndpoints() {
+        const sameOrigin = new URL("/api/save-html", location.origin).href;
+        const localNodeByIp = "http://127.0.0.1:8010/api/save-html";
+        const localNodeByName = "http://localhost:8010/api/save-html";
+        const currentHostNode = location.hostname
+          ? `http://${location.hostname}:8010/api/save-html`
+          : localNodeByIp;
+        return [...new Set([sameOrigin, currentHostNode, localNodeByIp, localNodeByName])];
+      }
+
+      async function readJsonResponse(response) {
+        const text = await response.text();
+        try {
+          return JSON.parse(text);
+        } catch (error) {
+          if (text.trim().startsWith("<")) {
+            throw new Error(
+              "Save API svarte med HTML fra denne adressen."
+            );
+          }
+          throw new Error("Save API svarte ikke med gyldig JSON.");
+        }
+      }
+
+      function downloadHtml() {
+        if (!htmlSource.value) {
+          setStatus("Ingen HTML a laste ned.");
+          return;
+        }
+
+        if (lastDownloadedUrl) URL.revokeObjectURL(lastDownloadedUrl);
+        const blob = new Blob([htmlSource.value], { type: "text/html;charset=utf-8" });
+        lastDownloadedUrl = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = lastDownloadedUrl;
+        anchor.download = "emnebeskrivelse.html";
+        anchor.click();
+        setStatus("Nedlasting startet.");
+      }
+
+      async function copyHtml() {
+        if (!htmlSource.value) {
+          setStatus("Ingen HTML a kopiere.");
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(htmlSource.value);
+          setStatus("HTML kopiert til utklippstavlen.");
+        } catch (error) {
+          setStatus("Kunne ikke kopiere automatisk. Marker teksten og kopier manuelt.");
+        }
+      }
+
+      function reloadCurrentFile() {
+        if (courseSelect.value) {
+          localStorage.removeItem(draftKey(courseSelect.value));
+          loadCourse(courseSelect.value);
+        } else {
+          parsedDocument = null;
+          fieldForm.innerHTML = "";
+          htmlSource.value = "";
+          previewFrame.srcdoc = "";
+          formMeta.textContent = "Ingen fil valgt";
+          sourceMeta.textContent = "Ingen fil valgt";
+          setStatus("Velg en emnebeskrivelse for a starte.");
+        }
+      }
+
+      function schedulePreview() {
+        clearTimeout(previewTimer);
+        previewTimer = setTimeout(updatePreview, 250);
+      }
+
+      function updatePreview() {
+        previewFrame.srcdoc = addPreviewBase(htmlSource.value);
+        previewMeta.textContent = new Date().toLocaleTimeString("nb-NO", {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+      }
+
+      function addPreviewBase(html) {
+        const baseHref = currentPath && currentPath.includes("/")
+          ? new URL(currentPath, location.href).href
+          : location.href;
+        const baseTag = `<base href="${baseHref}">`;
+        if (/<head[^>]*>/i.test(html)) {
+          return html.replace(/<head([^>]*)>/i, `<head$1>${baseTag}`);
+        }
+        return `${baseTag}${html}`;
+      }
+
+      function switchTab(tabName) {
+        tabButtons.forEach((button) => {
+          button.classList.toggle("active", button.dataset.editorTab === tabName);
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-hidden", panel.dataset.editorPanel !== tabName);
+        });
+      }
+
+      function saveDraft() {
+        if (!currentPath) return;
+        localStorage.setItem(draftKey(currentPath), htmlSource.value);
+      }
+
+      function draftKey(path) {
+        return `emnebeskrivelse-editor:${path}`;
+      }
+
+      function text(selector) {
+        return parsedDocument.querySelector(selector)?.textContent.trim() || "";
+      }
+
+      function setText(selector, value) {
+        const element = parsedDocument.querySelector(selector);
+        if (element) element.textContent = value;
+      }
+
+      function setStatus(message) {
+        statusMessage.textContent = message;
+      }
+
+      function escapeHtml(value) {
+        return value
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
+      function escapeAttribute(value) {
+        return escapeHtml(value).replaceAll("'", "&#39;");
+      }
+    </script>
+  </body>
+</html>
